@@ -13,4 +13,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CODIKER }}'
           channelId: live
-          projectId: codiker
+          projectId: codiker-415e6
