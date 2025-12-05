@@ -169,10 +169,15 @@ p {
     position: relative;
     padding: 10rem 0 6rem;
     text-align: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/images/hero_neural.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/images/hero_neural.webp');
     background-size: cover;
     background-position: center;
     overflow: hidden;
+}
+
+/* Fallback for browsers that don't support WebP */
+.no-webp .hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/images/hero_neural.png');
 }
 
 .hero-content {
