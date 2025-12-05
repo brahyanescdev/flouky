@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
     // Add scroll animation for elements
     const observerOptions = {
         threshold: 0.1
