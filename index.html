@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,14 +21,25 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Flouky</a>
-            <!-- Add menu items if needed, for now keeping it simple as per image -->
+        <div class="nav-container">
+            <a href="#hero" class="logo"><img src="assets/images/logo.png" alt="Flouky" /></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#use-cases" class="nav-link">Casos de Uso</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#why-us" class="nav-link">¿Por qué nosotros?</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container hero-content">
             <div class="badge">
                 <i class="fa-solid fa-wand-magic-sparkles"></i> Expertos en IA y Automatización
@@ -45,7 +58,7 @@
     </section>
 
     <!-- Use Cases Section -->
-    <section class="use-cases section-padding">
+    <section id="use-cases" class="use-cases section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Casos de Uso</h2>
@@ -150,7 +163,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-us section-padding">
+    <section id="why-us" class="why-us section-padding">
         <div class="container grid-2 align-center">
             <div class="why-content">
                 <h2>¿Por Qué Elegirnos?</h2>
